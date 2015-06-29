@@ -1,0 +1,126 @@
+body {
+	font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;;
+}
+p {
+	font-size: 20px;
+	font-weight: 200;
+}
+/* Line 5 is an example of a CSS Class.  Notice the .DOT notation*/
+.container {
+	margin: 0 auto;
+	width: 100%;
+	color: white;
+	font-weight: 200;
+}
+/* Line 12 is an example of a CSS ID.  Notice the #IDname notation*/
+#marketo-ball {
+	float: left;
+}
+
+.top-bar {
+	padding-top: 20px;
+	padding-left: 130px;
+	height: 50px;
+	background-color: #5A56A2;
+	color: white;
+	font-size: 28px;
+	font-weight: 200;
+	line-height: 1.5;
+}
+
+.second-top-bar {
+	height: 75px;
+}
+
+.topic-of-day {
+	height: 100px;
+	padding-top: 60px;
+	background-image: url("http://marketolive.com/m2/assets/img/marketolivehomepage1.png");
+	background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	font-weight: 100;
+}
+
+.inner-container {
+	padding: 40px;
+	background-color: #F2F2F2;
+}
+
+.topic-explanation {
+	padding: 25px;
+	background-color: #FFFFFF;
+}
+
+.header {
+	margin-top: 15px;
+	color: #5A56A2;
+	font-size: 40px;
+	font-weight: 200;
+}
+
+.box-explanation {
+	margin-top: 25px;
+
+}
+
+pre {
+	display: block;
+	border-radius: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: lightgrey;
+}
+
+.box-model-definitions {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.box-model-definitions p {
+	display: inline-block;
+	margin-right: 25px;
+	font-size: 24px;
+}
+
+#boxmodel,
+#classandid {
+	margin-top: 20px;
+	width: 100%;
+	background-color: white;
+}
+
+.classes,
+.IDs {
+	margin-top: 25px;
+}
+
+#pseudo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;	
+}
+
+#mockup {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: auto;
+}
+
+footer {
+	margin-bottom: 20px;
+	color: #5A56A2;
+	font-size: 30px;
+	font-weight: 200;
+}
+
+
+

@@ -1,0 +1,127 @@
+body{
+  margin: 0px;
+  width: 100%;
+  font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;;
+}
+.body{
+  background-color: #f2f2f2;
+  width: 100%;
+  display: inline-block;
+  min-height: 900px;
+}
+.purp-background{
+  background-color: #5a54a4;
+  width: 100%;
+}
+#marketo-ball{
+  width: 80px;
+  float: left;
+}
+.navbar-header{
+  height: 50px;
+  margin: 0px 50px 0px 50px;
+}
+.marketo-in-action-logo{
+  float: left;
+  width: 125px;
+  margin-top: 15px;
+}
+.section-container{
+  width: 100%;
+  height: auto;
+}
+.section-inner-container{
+  min-height: 100px;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.section-top-container{
+  width: 100%;
+  min-height: 100px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 50px;
+}
+.section-background{
+  background: url('https://marketolive.com/m2/assets/img/marketolivehomepage1.png') no-repeat center center fixed;
+  background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.section-body{
+  padding: 25px;
+}
+.section-header{
+  font-size: 48px;
+  font-weight: 100;
+  text-align: center;
+}
+.topic-description{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.topic-header{
+  color: #5a54a4;
+  font-size: 20px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.form-container{
+  width: 100%;
+  display: inline-block;
+}
+.form-description{
+  float: left;
+  width: 50%;
+}
+.form-description-header{
+  font-size: 22px;
+  width: 100%;
+  margin-top: 25px;
+}
+.form-description-body{
+  font-size: 18px;
+  margin-top: 15px;
+  width: 100%;
+}
+.form{
+  float: left;
+  height: 400px;
+  padding-left: 50px;
+}
+.form-header{
+  font-size: 22px;
+  margin-bottom: 25px;
+  padding-left: 45px;
+}
+.mktoLabel{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;;  
+}
+.add-white{
+  color: #fff;
+}
+.add-background-white{
+  background-color: #fff;
+}
+.added-padding{
+  padding: 50px;
+}
+.inserted-image{
+  width: 100%;
+  padding-top: 10px;
+}
+h1{
+  font-size: 18px;
+  color: #5a54a4;
+}
+#no-decoration{
+  text-decoration: none;
+}

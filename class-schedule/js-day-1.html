@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head profile="//marketosolutionsconsulting.com/m2/goagile/home.html">
+    <link rel="icon"
+    type="image/png"
+    href="//marketolive.com/m/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>JS-Day-1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <LINK rel="stylesheet" type="text/css" href="css/classes.css" media="screen"></link>
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body id="page-top">
+    <div class = "body">
+      <div class="purp-background">
+        <div class="container">
+          <div class="navbar-header">
+            <a href = "../class-schedule/home.html"><img id = "marketo-ball" src="../class-schedule/images/marketoball.png" alt=""></a>
+            <div class = "marketo-in-action-logo">
+              <img src="../class-schedule/images/scuniversitylogo.png" width="125px;" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "section-container">
+        <div class = "section-top-container">
+          <div class = "section-background">
+            <div class = "section-inner-container">
+              <div class = "section-body">
+                <div class = "section-header add-white">
+                  JS - DAY 1
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "section-inner-container add-background-white">
+          <div class = "section-body added-padding">
+            <div class = "topic-header">
+              Why learn JS?
+            </div>
+            <div class = "topic-description">
+              Ever wonder how websites are able to be dynamic in nature? If you hover over something or if you click something and the page responds immediately, there's a
+              good chance that was accomplished using JavaScript. JavaScript was made to be the language to manipulate the DOM (websites) but over the past 10 years has really
+              grown in strength to be able to perform a variety of actions in a sophisticated manner.  
+            </div>
+            <div class = "topic-header">
+              What will you learn in this class?
+            </div>
+            <div class = "topic-description">
+              You will learn everything from object oriented programming (OOP) which is the building blocks for every coding language, and also how JavaScript (JS) is a powerful way
+              of having a beautiful user experience by manipulating the DOM.  
+            </div>
+            <div class = "topic-header">
+              Part 1: Getting Started
+            </div>
+            <div class = "topic-description">
+              Alright, if you're not doing the HTML course and haven't seen this before, first thing youre going to do is go to google and search for sublime text. Download 
+              <a href = "http://www.sublimetext.com/"> sublime text </a> 2 or 3, doesn't really matter. Once you do, we can get started. Go ahead and open it up and you'll see a blank black page.... 
+              Perfect. Now what you should do is create a folder on your desktop for this course. Once you do that, go ahead and save this new sublime text file into that folder <b> save it as a .html file, and name it 
+              whateveryourfilenameis.js when you save it </b><br><br>. In the first few lessons we won't be using Sublime Text to actually run the JS but to make sure we have proper formatting. We'll
+              be running most of our code in the console. Let's go ahead and see what that looks like. Open up Google Chrome and go to a blank tab. Go ahead and right click on that tab and click Inspect Element.
+              On the top, you'll see a bar with options, one being "Console". Go ahead and click that.<br>
+              Google Chrome -> right click -> Inspect Element -> Console. 
+              <img class = "inserted-image" src = "../class-schedule/images/day1jsimage1.png">
+            </div>
+            <div class = "topic-header">
+              Part 2: Starting Your First JS Script
+            </div>
+            <div class = "topic-description">
+              Let's go ahead and starting writing some code. The first thing we're going to do is learn how to write to the console in an output fashion. Go to Sublime Text (ST) and type 
+              "console.log("Hello World!");". Everything we write up in ST we'll copy over to the console and press enter and it'll run so that's how we'll structure organizing and running our code for now.
+              So, let's go ahead and copy that code and paste it in the console. You should see this.
+              <img class = "inserted-image" src = "../class-schedule/images/day1jsimage2.png">   
+              What you'll notice is that after we press enter the console will output what we entered in console.log. In this case you see that it repeated "Hello World!" back to us. Using console.log
+              we'll be able to test our code. <br><br>
+              The first topic we'll learn is variables. In programming, there are multiples types of basic variables that you can use (int, double, string, float, boolean). <br><br>
+              <font style = "color: #5a54a4"> int </font> - this stands for integer (as in numbers) <br>
+              <font style = "color: #5a54a4"> double or float </font> - these are decimal numbers <br>
+              <font style = "color: #5a54a4"> string </font> - these are words or characters (like 'Hello World!') <br>
+              <font style = "color: #5a54a4"> boolean </font> - these are variables that hold two values, true or false <br><br>
+              Unlike traditional programming languages, we don't have to declare that we're using a specific type of variable in JS. All variables types fall under 'var'. For example, if we type
+              'var x = 10;' x is being treated as an integer but we don't have to declare it as one, we just declare the variable using var. Let's take another example, what if we want it to be a string?
+              Again we just state 'var x = "Hello World!"'. You don't have to declare it as a type string. Let's see what that looks like...
+              <img class = "inserted-image" src = "../class-schedule/images/day1jsimage3.png">                 
+              When we copy and paste this into the console you'll see an output of 10 and then 'Hello World!' which is what we would expect to see. A couple things to note here in this example, we are using the
+              same variable and redefining what is stored in that variable. We first declare x as a variable 'var x = 10' and then <b> anytime after that we want to set the variable to a new value we don't need to
+              redeclare the variable using 'var' we can just retype the name of the variable and give it a new value </b>.<br><br> Try out all of the different variable types before you continue. Try 'var x = true;' (boolean)
+              and try 'var x = 2.18172' (float/double). 
+            </div>
+            <div class = "topic-header">
+              Part 3: Learning Conditional Logic
+            </div>
+            <div class = "topic-description">     
+              The next thing we'll jump into is boolean logic. How do we create if statements in JS? The structure around a basic if statement is this: <br><br> 
+              <font style = "color: green;">if('condition' 'operator' 'value')</font>{  <br>
+              <font style = "color: blue;">The logic you want to have around that statement being true </font> <br>
+              <font style = "color: red;">else </font>{ <br>
+              <font style = "color: purple;">The logic you want to have around that statement being false </font> <br>
+              }<br><br>
+              Let's see how this looks in practice. Lets say we have 'var x = 10' and another 'var y = 15'. If we want to see if x < y and if it is, we want to output 'It is greater than 10' otherwise, we 
+              want to output that it is not greater than 10. We would do this...
+              <img class = "inserted-image" src = "../class-schedule/images/day1jsimage4.png">                               
+              This is the structure for all if statements. <b> Make sure to notice the usage of '{}' around both the if and else</b> this is very important to actually have your code run. If we paste this into the console
+              we'll notice that it'll return 'it is greater than 10' which we would expect. Let's look at some of the different operator values that exist: <br><br>
+              <font style = "color: #5a54a4"> > </font> - greater than <br>
+              <font style = "color: #5a54a4"> < </font> - less than <br>
+              <font style = "color: #5a54a4"> <= </font> - less than or equal to <br>
+              <font style = "color: #5a54a4"> >= </font> - greater than or euqal to <br>              
+              <font style = "color: #5a54a4"> == </font> - comparative operator, if condition equals value <br>            
+              <font style = "color: #5a54a4"> != </font> - comparative operator, if condition does not equal value<br><br>
+              Go ahead and start trying to put together some examples. Like if a variable 'var = "John"' equals a variable 'var = "Sally"' and testing if they equal each other. If they don't say the don't. Try to work with all the operators. 
+              The next question is, how do we string together multiple conditions together in one "if" statement? We would do this using AND or OR statements. These look like this in JS. <br><br>
+              <font style = "color: #5a54a4"> || </font> - greater than <br>
+              <font style = "color: #5a54a4"> && </font> - less than <br><br>
+
+              <font style = "color: #5a54a4"> Ex. </font> Let's say that a girl named Sally is 10 years old, and Johnny is 15. We want to create some logic to test for that so we'll say if Sally is greater than 5, and Johnny is younger than 20 then we want to output "Success!" otherwise
+              we want to say "Nooooo...". <br><br>
+
+              If we wanted to write this out, it would look like...
+              <img class = "inserted-image" src = "../class-schedule/images/day1jsimage5.png">  
+              Great, you should get "Success!". Now what if we want to compare 2 statements that each had 2 conditions within it? Let's go ahead and add Jill and Peter into this. Jill is 25 and Peter is 5. What if we want to say, if Jill is 20 and Sally is greater than 5 OR if Peter is not equal to
+              8 and Johnny is younger than 20. We need to use paranthesis to do this to separate out the logic.
+
+              Let's see what it looks like...                                            
+              <img class = "inserted-image" src = "../class-schedule/images/day1jsimage6.png">
+              This should also return a success!. Even though the first part of the logic is not true, the second part is which allows the statement to continue to be true. Great! 
+            <div class = "topic-header">
+              End of Lesson 1
+            </div>
+            <div class = "topic-description">        
+              Congrats on finishing Part 1 of the JS lesson! +10 points. Hopefully you learned a lot. There is a ton more in the future but this is a start! Let's go ahead and start using what you've learned. <br><br>
+              To round of this lesson we are always going to have example problems so lets get started and have you work through them. 
+              <br><br><b>(NOTE: They will always be only things we learned in the lesson. There is no need to use outside resources or something we didnt talk about to accomplish the sample problems.)</b>
+            </div>
+            <div class = "topic-header">
+              PROBLEMS: Problem 1
+            </div>
+            <div class = "topic-description">        
+              Ex. A variable 'x' is 10, variable 'y' is 15, variable 'a' is 5, variable 'b' is 20, variable 'z' is true. Make it so that if x is less than or equal to y and a is less than y OR y is less than x and b is greater than a then return "Success!" otherwise
+              say "no!".         
+            </div>
+            <div style = "margin-top: 50px;"class = "topic-header">
+              FOOTER
+            </div>
+            <div class = "topic-description">        
+              Arrash Yasavolian <br>
+              ayasavolian@marketo.com <br>
+              5/28/15
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

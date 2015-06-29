@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head profile="//marketosolutionsconsulting.com/m2/goagile/home.html">
+    <link rel="icon"
+    type="image/png"
+    href="//marketolive.com/m/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>JS-Day-2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <LINK rel="stylesheet" type="text/css" href="css/classes.css" media="screen"></link>
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body id="page-top">
+    <div class = "body">
+      <div class="purp-background">
+        <div class="container">
+          <div class="navbar-header">
+            <a href = "../class-schedule/home.html"><img id = "marketo-ball" src="../class-schedule/images/marketoball.png" alt=""></a>
+            <div class = "marketo-in-action-logo">
+              <img src="../class-schedule/images/scuniversitylogo.png" width="125px;" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class = "section-container">
+        <div class = "section-top-container">
+          <div class = "section-background">
+            <div class = "section-inner-container">
+              <div class = "section-body">
+                <div class = "section-header add-white">
+                  JS - DAY 2
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class = "section-inner-container add-background-white">
+          <div class = "section-body added-padding">
+            <div class = "topic-header">
+              What are we learning today?
+            </div>
+            <div class = "topic-description">
+              <font style = "color: #5a54a4"> Recap </font> - go over what we did last time <br>
+              <font style = "color: #5a54a4"> Alerts </font> - alerts the viewer of a message <br>
+              <font style = "color: #5a54a4"> Prompts </font> - allow the user to input a response <br>
+              <font style = "color: #5a54a4"> Functions </font> - alerts the viewer of a message <br>
+            </div>
+            <div class = "topic-header">
+              Part 1: Recap
+            </div>
+            <div class = "topic-description">
+              Last time we went over different variable types and how we can use test logic with if statements. We also went over how to use the console to be able to test which will be very valuable again
+              today to test different parts of the lesson. 
+            </div>
+            <div class = "topic-header">
+              Part 1: Alerts
+            </div>
+            <div class = "topic-description">
+              So the first thing we're going to go over today is how to be able to interact with a user and alert them with a message. (This will be relatively simple)
+              Go ahead and pop open your browser (hopefully you're using Chrome) and go to the console. All we'll do is type <bold> alert("Hello world!"); </bold>. You'll notice that you'll receive
+              a pop up that alerts the user of Hello world!. We'll use this to alert the user of certain actions they've taken and to communicate with them. <br><b> NOTE: do not use uppercase to call alert, it's called with a lowercase 'a' </b>
+              <img class = "inserted-image" src = "../class-schedule/images/day2jsimage1.png">
+            </div>
+            <div class = "topic-header">
+              Part 2: Prompts
+            </div>
+            <div class = "topic-description">
+              Similar to alert, we can communicate with the user through prompts. Prompts are a way for us to get an input from the user. Traditionally, languages like C++, Python, Ruby etc. will use the terminal
+              to accomplish this. Because JavaScript runs on the client-side it uses the console to take inputs and to push outputs. In order to ask the user for an input without using DOM elements we can just use prompt.
+              <b> prompt("what is your age?"); </b> This will present the user with a field that they can fill in. You'll notice once you answer that it will put the response in the console as a string.
+              We can actually store the value that they input in the prompt into a variable and do things with it. Let's see an example. <br><b> NOTE: do not use uppercase to call prompt, it's called with a lowercase 'p' </b>
+              <img class = "inserted-image" src = "../class-schedule/images/day2jsimage2.png">
+              The user in this example entered 25 as their age. As you can see, we can take the input from the prompt and store it in a variable like I did here with "age". I then only console.log the variable age and we can see that it has properly stored the value of 25 that
+              the user has entered. 
+            </div>
+            <div class = "topic-header">
+              Part 3: Introduction to Functions
+            </div>
+            <div class = "topic-description"> 
+              Now that we've learned how to take an input from a user, and we've also learned how to do boolean logic to test for values using if statements we can start learning how to structure our code around functions. Similar to math,
+              functions can take a value or multiple values, manipulate the values and return a value back to the user. In math it would look something like this...
+              <img class = "inserted-image" src = "../class-schedule/images/day2jsimage3.png">
+              What we've done is declared a function, f(x) = x * 4, and then we went through and passed an argument into the function as 'x'. The first time we passed 2 in, and the function would return 8, simply because its 4 * 2 = 8. The second
+              example passes 4 in as x and this would return 16 as 4 * 4 = 16. This is very similar to creating functions in JS and any other programming language. To do the same thing in JS we're going to do this instead though...
+              <img class = "inserted-image" src = "../class-schedule/images/day2jsimage4.png">
+              Notice the way this is structured... a best practice is always to set your function equal to a variable (we'll see why later). We will use this variable as the way to invoke the function and give it uniqueness. we then initialize this variable as a function
+              'function(x)' and give it an argument that is passed in as 'x'. We then have curly braces so signify the body of the function and within the body we decide what we would like to perform. In this example, we're just taking the passed
+              argument 'x' and setting it equal to itself multiplied by 4, 'x = x *4'. In order to output this to the console we are just console.logging x. When you run this you'll see that the output is 8, which we would expect. <br><br>
+              Let's take a look at a little more complex example... in this one we'll add an if statement inside the function to test for a value that we'll pass in. 
+              <img class = "inserted-image" src = "../class-schedule/images/day2jsimage5.png">
+              What we're doing here is instead testing to see if the value passed in is greater than a certain value. If it is or isnt then we'll log it a different way. We see that when we pass in 6, that the if statement gets passed to the else because the value
+              passed in is '6'. Let's take this one step further and now look at how we can start communicating with our user based on the inputs they pass in using prompt.
+              <img class = "inserted-image" src = "../class-schedule/images/day2jsimage6.png">
+              In this example, we're asking the user to input what the temperature is outside. We then store that value in a variable 'temp'. We then pass that value into our testFunction as the value of the argument 'temperature'. Once its passed in we then run it through
+              the body of the function which will test to see what season it must be. If the value is above 85, then it will output that its summer, if its less than 85 but greater than 65 it output that it must be fall, and if its less than 65 then it will hit the else.
+
+
+ 
+            <div class = "topic-header">
+              End of Lesson 2
+            </div>
+            <div class = "topic-description">        
+              Congrats on finishing Part 2 of the JS lesson! +10 points. We went over some good stuff today, functions is going to be an integral way of using JS and is the basis of all progrmaming. 
+              <br><br><b>(NOTE: They will always be only things we learned in the lesson. There is no need to use outside resources or something we didnt talk about to accomplish the sample problems.)</b>
+            </div>
+            <div class = "topic-header">
+              PROBLEMS: Problem 1
+            </div>
+            <div class = "topic-description">        
+              What is your IQ? Design a function that takes an entered IQ and if it is greater than 140 alert  the viewer that theyre a genius, otherwise alert them that they are sadly normal.        
+            </div>
+            <div class = "topic-header">
+              PROBLEMS: Problem 2
+            </div>
+            <div class = "topic-description">        
+            2)  What is the weather? Design a function that takes the current weather (hot, cold, mild) and if its     hot outside ask them what temperature, if it’s cold then we want to just tell   them that stinks that they probably don’t live in California and that they  should go back to Baaaaston.       
+            </div>
+
+
+            <div style = "margin-top: 50px;"class = "topic-header">
+              FOOTER
+            </div>
+            <div class = "topic-description">        
+              Arrash Yasavolian <br>
+              ayasavolian@marketo.com <br>
+              5/28/15
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
