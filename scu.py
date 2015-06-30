@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
 ##This is related to SQL, get to this after you figure out posting and getting using Python
 
-"""
+
 engine = create_engine('sqlite:///tutorial.db')
 
 metadata = MetaData(engine)
@@ -62,4 +62,3 @@ print 'Password:', row[users.c.password]
 
 for row in rs:
     print row.name, 'is', row.password, 'is their password'
-"""
