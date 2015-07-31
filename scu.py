@@ -5,28 +5,52 @@ from sqlalchemy import *
 from sqlalchemy.sql import *
 
 app = Flask(__name__)
-'''
+
+engine = create_engine('sqlite:///tutorial.db')
+
+metadata = MetaData(engine)
+
 users = Table('users', metadata,
    Column('id', Integer, Sequence('user_id_seq'), primary_key=True),
    Column('name', String(50)),
-   Column('fullname', String(50)),
+   Column('lastname', String(50)),
    Column('password', String(12))
 )
-'''
+
+connection = engine.connect()
+print "Get's to after connect"
+i = users.insert()
+print "gets to after the insert"
+i.execute({'name': 'Peter', 'lastname': 'Kim'},
+         {'name': 'Gary', 'lastname': 'Lochhead'},
+          {'name': 'Kia', 'lastname': 'Fathi'})
+
+s = select([users.c.name, users.c.password]).where(users.c.name == 'Kia')
+result = connection.execute(s)
+for row in result:
+  print "name:", row['name']
+connection.close()
+
 @app.route('/')
 def main():
     return render_template('home.html')
 
 @app.route("/test")
 def test():
+    print "Get's here"
     connection = engine.connect()
+    print "Get's to after connect"
     i = users.insert()
-    i.execute({'name': 'Peter', 'password': 'Kim'},
-             {'name': 'Gary', 'password': 'Lochhead'},
-              {'name': 'Laura', 'password': 'Fanning'})
+    print "gets to after the insert"
+    i.execute({'name': 'Peter', 'lastname': 'Kim'},
+             {'name': 'Gary', 'lastname': 'Lochhead'},
+              {'name': 'Kia', 'lastname': 'Fathi'})
+    print "this is the execution"
+    return "hello world!"
+
 
     #connection = engine.connect()
-    return "hello world!"
+    #return "hello world!"
 
     '''
     s = select([users.c.name, users.c.password]).where(users.c.name == 'Laura')
