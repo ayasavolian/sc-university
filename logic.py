@@ -7,9 +7,32 @@ Base.metadata.bind = engine
 
 DBSession = sessionmaker()
 DBSession.bind = engine
-session = DBSession()
 
-session.query(User).all()
+class Check_Login(object):
+  def __init__(self, creds, session):
+    self.username = creds.get("username")
+    self.password = creds.get("password")
+    self.session = session;
+  def check_existence(self):
+    user = self.session.query(User).\
+            filter(User.username == self.username) 
+    person = "false"
+    for single in user:
+      person = {
+        'username' : single.username,
+      }
+    return person
 
-user = session.query(User).first()
-print user.first_name
+def run_class(value, data):
+    session = DBSession()
+    if value == "Check_Login":
+      try:
+          login = Check_Login(data, session)
+          person = login.check_existence()
+          session.commit()
+          return person
+      except:
+          session.rollback()
+          raise
+      finally:
+          session.close()

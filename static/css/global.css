@@ -1,7 +1,7 @@
 html,
 body {
     margin: 0px;
-    font-family: Roboto;
+    font-family: Roboto Light;
 }
 
 .body-background{
@@ -64,10 +64,12 @@ body {
 .main-logo{
   position: absolute;
   top: 50%;
-  left: 25%;
+  /* left: 25%; */
   width: 50%;
   margin: auto;
   text-align: center;
+  top: 40%;
+  width: 100%;
 }
 
 .home-page-option-container {
