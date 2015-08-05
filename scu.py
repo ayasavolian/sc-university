@@ -3,6 +3,8 @@ import httplib2
 import json
 from urllib import urlencode
 from logic import run_class
+import string
+import random
 
 app = Flask(__name__)
 
@@ -11,12 +13,14 @@ def sumSessionCounter():
     session['counter'] += 1
   else:
     session['counter'] = 1
+    session['id'] = ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(15))
 
 @app.route('/')
 def main():
   sumSessionCounter()
   if 'username' in session:
-    return render_template('home.html')
+    return render_template('home.html',
+                           user = session['username'])
   else:
     return redirect(url_for('login'))
 
@@ -26,13 +30,16 @@ def login():
   if 'username' in session:
     return redirect(url_for('main'))
   else:
-    return render_template('login.html')
+    return render_template('login.html',
+                           id = session['id'])
 
 @app.route('/creds', methods=['POST'])
 def creds():
+  print "this is a test"
   if request.method == 'POST':
     data = request.json
-    login = run_class('Check_Login', data)
+    if data['valueAdd'] == session['id']:
+      login = run_class('Check_Login', data)
     value_pass = {
       'resp' : "fail"
     }

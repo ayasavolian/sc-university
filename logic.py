@@ -15,7 +15,7 @@ class Check_Login(object):
     self.session = session;
   def check_existence(self):
     user = self.session.query(User).\
-            filter(User.username == self.username) 
+            filter(User.username == self.username, User.password == self.password) 
     person = "false"
     for single in user:
       person = {

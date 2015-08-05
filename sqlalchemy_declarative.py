@@ -43,8 +43,6 @@ class Response(Base):
     id = Column(Integer, primary_key=True)
     question = relationship(Question)
     question_id = Column(Integer, ForeignKey('question.id'))
-    user = relationship(User)
-    user_id = Column(Integer, ForeignKey('user.id'))
     response = Column(String(250))
 
 class AEDT(Base):

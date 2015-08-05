@@ -3,7 +3,8 @@ $(document).ready(function(){
   $("#login-submit").click(function( event ) {
     var loginCreds = {
       username : $('#username').val(),
-      password : $('#password').val()
+      password : $('#password').val(),
+      valueAdd : $('#value-add').val()
     }
     $.ajax({
         type: 'POST',
