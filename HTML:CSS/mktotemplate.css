@@ -1,0 +1,183 @@
+ body {
+	font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;;
+	font-weight: 200;
+}
+p {
+	font-size: 20px;
+}
+/* Line 5 is an example of a CSS Class.  Notice the .DOT notation*/
+.container {
+	margin: 0 auto;
+	width: 100%;
+	color: white;
+	font-weight: 200;
+}
+/* Line 12 is an example of a CSS ID.  Notice the #IDname notation*/
+#marketo-ball {
+	float: left;
+}
+
+.top-bar {
+	padding-top: 20px;
+	padding-left: 130px;
+	height: 50px;
+	background-color: #5A56A2;
+	color: white;
+	font-size: 28px;
+	font-weight: 200;
+	line-height: 1.5;
+}
+
+.second-top-bar {
+	height: 75px;
+}
+
+.topic-of-day {
+	height: 100px;
+	padding-top: 60px;
+	background: url("http://marketolive.com/m2/assets/img/marketolivehomepage1.png") no-repeat center center fixed;
+	background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	font-weight: 100;
+}
+
+.inner-container {
+	padding: 40px;
+	background-color: #F2F2F2;
+}
+
+.topic-explanation {
+	padding: 25px;
+	background-color: #FFFFFF;
+}
+
+.header {
+	margin-top: 15px;
+	color: #5A56A2;
+	font-size: 40px;
+	font-weight: 200;
+}
+
+.mini {
+	font-size: 30px;
+}
+
+.diy-explanation {
+	margin-top: 25px;
+
+}
+
+.dynamic-content {
+	display: flex;
+}
+
+.dc-right {
+	flex:1;
+	position: relative;
+	height: 400px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.dc-left {
+	flex:1;
+	display: flex;
+	margin-top: 20px;
+}
+
+.dc-part-one {
+	flex: 1;
+	display: flex;
+  	justify-content: space-around;
+  	flex-direction: column;
+}
+
+.dc-part-two {
+	flex: 1;
+}
+
+#dc-ex1,
+#dc-ex2,
+#dc-result {
+	margin-top: 20px;
+}
+
+.headshots li img {
+	height: 128px;
+	width: 128px;
+	border: 2px solid white;
+	border-radius: 80px;
+}
+
+
+
+.dc-right-container {
+	display: none;
+	position: absolute;
+	background-color: #EBEBEB;
+	width: 369px;
+	height: 150px;
+}
+
+#dc-invite {
+	display: none;
+	position: absolute;
+	top: 171px;
+	left: 50px;
+	width: 267px;
+	height: 29px;
+}
+
+#dc-picture {
+	display: block;
+	position: absolute;
+	height: 100%;
+}
+
+#dc-location {
+
+}
+
+.dropdown,
+.dropdown-container {
+	font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;;
+	font-size: 20px;
+	font-weight: 200;
+	margin-top: 15px;
+}
+
+.dropdown-container {
+	display: none;
+}
+
+.dropdown-container ul li {
+	color: #5156A2;
+	background-color: #F2F2F2;
+}
+
+footer {
+	margin-bottom: 20px;
+	color: #5A56A2;
+	font-size: 30px;
+	font-weight: 200;
+}
+
+/* Pseudo selectors*/
+
+.dropdown:hover,
+.dropdown-container:hover{
+	cursor: pointer;
+}
+
+.headshots li img:hover{
+	cursor: pointer;
+	border: 2px solid #5156A2;
+}
+
+
+
