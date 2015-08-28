@@ -35,7 +35,6 @@ def login():
 
 @app.route('/creds', methods=['POST'])
 def creds():
-  print "this is a test"
   if request.method == 'POST':
     data = request.json
     if data['valueAdd'] == session['id']:
@@ -43,17 +42,19 @@ def creds():
     value_pass = {
       'resp' : "fail"
     }
-    if login == "false":
-      return json.dumps(value_pass)
-    else: 
+    if login:
+      print "successful"
       value_pass['resp'] = "success"
-      session['username'] = login['username']
+      return json.dumps(value_pass)
+    else:
+      print value_pass
       return json.dumps(value_pass)
 
 @app.route('/clear')
 def clearsession():
   session.clear()
   return redirect(url_for('login'))
+
 
 if __name__ == '__main__':
     app.secret_key = "F8u15h9hgd09hgaw4nogo23i188"

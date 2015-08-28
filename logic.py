@@ -1,3 +1,4 @@
+from flask import session
 from sqlalchemy_declarative import Base, User, Chapter, Test, Question, Response, AEDT
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -15,13 +16,10 @@ class Check_Login(object):
     self.session = session;
   def check_existence(self):
     user = self.session.query(User).\
-            filter(User.username == self.username, User.password == self.password) 
-    person = "false"
-    for single in user:
-      person = {
-        'username' : single.username,
-      }
-    return person
+            filter(User.username == self.username, User.password == self.password).first()
+    if bool(user):
+      session['username'] = user.username
+    return bool(user)
 
 def run_class(value, data):
     session = DBSession()
