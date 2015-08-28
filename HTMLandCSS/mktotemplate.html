@@ -1,0 +1,215 @@
+<html>
+<head>
+	<title>SCU- DIY Design</title>
+	<link rel="icon" type="image/png" href="//marketolive.com/m/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="mktotemplate.css" media="screen"></link>
+</head>
+<body>
+	<div class="container">
+		<div class="top-bar-container">
+			<div class="top-bar">SC University<img id="marketo-ball" src="../assets/img/marketoball.png">
+			</div>
+
+			<nav>
+		        <ul>
+		            <li>menuitem 1</li>
+		            <li>menuitem 2</li>
+		            <li>menuitem 3</li>
+		            <li>menuitem 4</li>
+		            <li>menuitem 5</li>
+		            <li>menuitem 6</li>
+		        </ul>
+		    </nav>
+		    <div id="content-layer"></div>
+						
+		</div>
+		<div class="content-container">
+			<div class="second-top-bar"></div>
+			<div class="topic-of-day">Marketo Live Training- DIY Design</div>
+
+			<div class="inner-container">
+				<div class="topic-explanation">
+					<h2 class="header">Marketo AE's- What you need to know</h2>
+
+					<p class="diy-explanation">For any type of automated campaign you wish to create with Marketo, various types of content are needed to power those efforts.  To that end, our platform gives users the ability to create (1) Emails, (2) Landing Pages, (3) Forms, and (4) Push Notifications.  By the end of reading this page, you will be able to understand and articulate to prosects:</p>
+
+					<p class="diy-explanation">The marketing and business value of Marketo assets</p>
+					<p class="diy-explanation">How Marketo helps non-technical marketers personalize these assets to maximize engagement</p>
+					<p class="diy-explanation">Provide answers to the most commonly asked questions about what Marketo assets can/cannot do</p>
+
+					<h3 class="header mini">Asset: Email</h3>
+
+					<p class="diy-explanation">Email is the primary asset most Marketo customers leverage to power their campaigns.  In today's digital age, its the primary way business' communicate with their customers.  Marketo's What You See Is What You Get (WYSIWYG for short) editor makes it easy for non-technical marketers to (1) create and (2) customize their emails.  In terms of creation, our <a href="https://templates.marketo.com">template library</a> has over 40 different email designs to choose from which can be imported directly into their arrount.  They are all responsive, so you can easily see how they would look on a variety of devices.  In terms of customization, leveraging (1) tokens and (2) dynamic content are the way to maximize engagement with recipients.  Think of a token as a placeholder for a field within the database, such as "lead.firstName".  Tokens help us personalize how we communicate with our audience AT SCALE.  Similarly, Dynamic content takes personaliztion to the next level by rendering different versions of an individual email based upon a characteristic of the recipient.  As the below example demonstrates, see how the image changes based upon the location of the recipient? <strong>(Hint: Click on each photo!)</strong></p>
+
+					<div class="dynamic-content">
+						<div class="dc-left">
+							<div class="dc-part-one">
+								<ul class="name-lucy">
+									<li>Name: Lucy</li>
+									<li>Location: New York</li>
+									<li>Job: Marketing Director</li>
+
+								</ul>
+
+								<ul class="name-joey">
+									<li>Name: Joey</li>
+									<li>Location: San Francisco</li>
+									<li>Job: UX Designer</li>
+
+								</ul>
+
+								<ul  class="name-jamey">
+									<li>Name: Jamey</li>
+									<li>Location: Chicago</li>
+									<li>Job: Software Engineer</li>
+
+								</ul>
+							</div>
+
+							<div class="dc-part-two">
+								<ul class="headshots">
+									<li id="headshot-1"><img src="../assets/img/headshot1.jpg"/></li>
+									<li id="headshot-2"><img src="../assets/img/headshot2.jpg" /></li>
+									<li id="headshot-3"><img src="../assets/img/headshot3.jpg" /></li>
+
+								</ul>
+							</div>
+						</div>
+
+						<div class="dc-right">
+							<img id="dc-picture" src="../assets/img/diy-dc-example.png" />
+
+							<img class="dc-right-container"/>
+
+							<img id="dc-invite" />	
+						</div>
+					</div>	
+
+					<h3 class="header mini">Asset: Landing Page</h3>
+
+					<p class="diy-explanation">A landing page is a web page that allows you to capture a visitor's information through a lead-capture form (AKA a conversion form).  A good landing page will target a particular audience, such as traffic from an email campaign promoting a particular ebook, or visitors who click on a pay-per-click ad promoting your webinar. Creating landing pages allows you to target your audience, offer them something of value, and convert a higher percentage of your visitors into leads, while also capturing information about who they are and what they've converted on.  Marketo's landing pages are built using a pure drag-and-drop interface, while also leveraging the tokens and dynamic content features for personalization.</p>	
+
+					<h3 class="header mini">Asset: Form</h3>	
+
+					<p class="diy-explanation">Forms are the way you gather information from your leads. They are a critical component of any landing page, but what you ask on these forms are perhaps more critical. You don't want to scare away potential leads by asking irrelevant questions, or questions that they aren't yet prepared to answer. Building trust between your brand and your visitors is key to gathering the information you need. Start building that trust through your Top of Funnel offerings; your forms should ask enough information to find out some key pieces of who they are, what they do, and what they are looking for, so you can better segment your leads into personas.</p>	
+
+					<h2 class="header">Marketo AE's, FAQ on DIY Design</h2>
+
+					<div id="dropdown-1" class="dropdown dropdown-processed">Q. How do you make emails dynamic?
+						<div class="dropdown-container">
+							<ul>
+								<li>A. Apply a segment to the body of text or image you’d like to apply dynamic content to (this is the same for landing pages).</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="dropdown-2" class="dropdown dropdown-processed">Q. How do you create a segment for dynamic content?
+						<div class="dropdown-container">
+							<ul>
+								<li>A. Dynamic Content segments are created in the lead database.  There is a limit of 20 segmentations and each segmentation has a limit of 100 variations (i.e. a Product Interest segment can contain 100 different products).</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="dropdown-3" class="dropdown dropdown-processed">Q. What fields are available as tokens?
+						<div class="dropdown-container">
+							<ul>
+								<li>A. Any field in Marketo - so if you synced your entire SF database in Marketo, all those fields can be used as tokens.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="dropdown-4" class="dropdown dropdown-processed">Q. What’s the difference between a landing page vs. microsite?
+						<div class="dropdown-container">
+							<ul>
+								<li>A. A landing page only has one clear call to action which is a form fill - the ultimate goal of a landing page is a form conversion. A microsite has other navigation links on them, like a mini website.</li>
+							</ul>
+						</div>
+					</div>			
+
+					<div id="dropdown-5" class="dropdown dropdown-processed">Q. Why is progressive profiling important?
+						<div class="dropdown-container">
+							<ul>
+								<li>A. Progressive profiling allows you to capture additional data without having the lead fill out the same fields on a form they’ve already filled out (form pre-fill).  Ultimately, you want to make the form fill as easy and quick as possible so that someone doesn’t abandon the form.</li>
+							</ul>
+						</div>
+					</div>	
+
+					<div id="dropdown-6" class="dropdown dropdown-processed">Q. Can I take Marketo Forms and place it on non-Marketo landing pages / my own website?
+						<div class="dropdown-container">
+							<ul>
+								<li>A. Yes. Marketo’s forms come with embed codes you can place anywhere on your own landing pages or your website. HOWEVER, you will not be able to get progressive profiling or form pre-fill capabilities using a marketo form on a non-marketo landing page (you CAN through iframes).</li>
+							</ul>
+						</div>
+					</div>				
+					
+					<h2 class="header">Marketo SC's- what you need to know</h2>
+
+					<p class="diy-explanation"></p>
+
+					<h2 class="header">Marketo SC's, FAQ on DIY Design</h2>
+
+					<div id="dropdown-7" class="dropdown dropdown-processed">Q. How do I upload my own html template into Marketo?
+
+						<div class="dropdown-container">
+							<ul>
+								<li>A. In the Design Studio, in the “new” drop down menu, select “ new email template” (NOT “new email”), and copy and paste your html (this is the same for landing pages).</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="dropdown-8" class="dropdown dropdown-processed">Q. What is a transactional / operational email?
+
+						<div class="dropdown-container">
+							<ul>
+								<li>A. Transactional emails are sent as a reaction to an action taken by someone such as: order confirmation, password reset, signup welcome email..etc. These will ignore unsubscribes and marketing suspended list.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="dropdown-8" class="dropdown dropdown-processed">Q. How does Marketo ensure email deliverability?
+
+						<div class="dropdown-container">
+							<ul>
+								<li>A. We have a dedicated team actively monitoring email deliverability. Check out <a href="https://trust.marketo.com">trust.marketo.com</a> and see our Sender Score (which is an email reputation metric). </li>
+							</ul>
+						</div>
+					</div>
+
+					
+
+					<div id="dropdown-9" class="dropdown dropdown-processed">Q. How do you make only certain fields of the form show up depending on a response to a previous field?
+
+						<div class="dropdown-container">
+							<ul>
+								<li>A. Visibility rules - you can set up logic within each field on the form to either have the field show up or hide dependent on a previous field’s data.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="dropdown-10" class="dropdown dropdown-processed">Q. Why are hidden fields important on forms?
+
+						<div class="dropdown-container">
+							<ul>
+								<li>A. Hidden fields do not show up on forms (the enduser cannot see them): this allows you to capture additional data about that person or where they came from (i.e. PPC campaigns - you are able to capture UTM parameters).</li>
+							</ul>
+						</div>
+					</div>
+					<h2 class="header">Test your skills</h2>
+			
+					<footer>Footer</footer>
+
+					<p>Carter Hickingbotham</p>
+					<p>chickingbotham@marketo.com</p>
+					<p>6/3/2014</p>
+				</div>					
+			</div>
+		</div>
+	</div>
+	<script src="../assets/js/diy-template.js"></script>
+</body>
+</html>
